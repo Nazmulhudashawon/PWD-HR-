@@ -1,10 +1,4 @@
 
-/*
-Template Name: Rukada Admin
-Author: codervent
-Email: codervent@gmail.com
-File: app.css
-*/
 
 body {
 	font-size: 14px;
@@ -19,7 +13,23 @@ a {
 	text-decoration: none
 }
 .Header{
-	background-color: #128e0a;
+    background-color: green;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+	z-index: 1; 
+	position: relative;
+    
+}
+
+img{
+    width: 100px;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .wrapper {
@@ -29,44 +39,18 @@ a {
 
 .sidebar-wrapper {
 	width: 250px;
-	height: 100%;
+	height: 800px;
 	position: relative;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	background: #fff;
 	border-right: 0 solid #e4e4e4;
-	z-index: 11;
-	box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .12)!important;
+	z-index: 0; 
+	box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .12);
 	transition: all .2s ease-out
 }
 
-.sidebar-header {
-	width: 250px;
-	height: 60px;
-	display: flex;
-	align-items: center;
-	position:absolute ;
-	top: 0;
-	bottom: 0;
-	padding: 0 15px;
-	z-index: 5;
-	background: #fff;
-	background-clip: padding-box;
-	border-bottom: 1px solid #e4e4e4
-}
-
-.logo-icon {
-	width: 30px
-}
-
-.logo-text {
-	font-size: 22px;
-	margin-left: 10px;
-	margin-bottom: 0;
-	letter-spacing: 1px;
-	color: #0d6efd
-}
 
 .toggle-icon {
 	font-size: 22px;
@@ -106,7 +90,7 @@ a {
 
 .page-footer {
 	background: #fff;
-	left: 250px;
+	left: 0;
 	right: 0;
 	bottom: 0;
 	position: fixed;
@@ -142,7 +126,6 @@ a {
 	display: -ms-flexbox;
 	display: flex;
 	padding: 10px;
-	margin-top: 60px;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
